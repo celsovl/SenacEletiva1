@@ -40,7 +40,7 @@ void matriz_destruir(matriz_t *m) {
 }
 
 matriz_t *matriz_transpor(matriz_t *m) {
-	matriz_t *t = matriz_criar(m->linhas, m->colunas);
+	matriz_t *t = matriz_criar(m->colunas, m->linhas);
 	int i, j;
 	for (i = 0; i < m->linhas; i++) {
 		for (j = 0; j < m->colunas; j++) {
